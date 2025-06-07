@@ -1,0 +1,124 @@
+2025-04-04T01:01:23.597Z-04:00 | INFO | -->(b6a2) GET https://api.cloudflareclient.com/v0a4762/reg/46753811-839b-4cfa-9d69-c43947bfa2f0/account
+2025-04-04T01:01:23.765Z-04:00 | INFO | SplashActivity: User launched SplashActivity
+2025-04-04T01:01:23.781Z-04:00 | INFO | TunnelRestartService: AppMode changed, restarting tunnel if already connected
+2025-04-04T01:01:24.328Z-04:00 | INFO | <--(b6a2) 200 OK https://api.cloudflareclient.com/v0a4762/reg/46753811-839b-4cfa-9d69-c43947bfa2f0/account (724ms, unknown-length body)
+2025-04-04T01:01:32.296Z-04:00 | DEBUG | SplashActivity: Cannot retrieve the referrer ID -  com.cloudflare.app.helpers.EmptyResultException: Task returned empty (null) result, start the app normally.
+2025-04-04T01:01:32.390Z-04:00 | INFO | VerifyAppState: check if CFOne app is installed and initialized
+2025-04-04T01:01:32.420Z-04:00 | INFO | PackageInstalledChecker: com.cloudflare.cloudflareoneagent is NOT installed
+2025-04-04T01:01:32.422Z-04:00 | INFO | VerifyAppState: CFone app is not Installed
+2025-04-04T01:01:32.521Z-04:00 | ERROR | RxBillingClient: error observed while fetching the play subscription - com.cloudflare.app.domain.warp.subscription.RxBillingClient$SubscriptionsUnsupportedException: Subscriptions are not supported on this device, it needs to have higher version of Google Play services (billing response: -1)
+2025-04-04T01:01:33.742Z-04:00 | INFO | MainActivity: User launched MainActivity
+2025-04-04T01:01:34.559Z-04:00 | INFO | -->(048d) GET https://api.cloudflareclient.com/v0a4762/client_config
+2025-04-04T01:01:34.618Z-04:00 | INFO | <--(048d) 200 OK https://api.cloudflareclient.com/v0a4762/client_config (48ms, unknown-length body)
+2025-04-04T01:01:34.829Z-04:00 | DEBUG | RegistrationDataObservable: Fetch registration data with default network config
+2025-04-04T01:01:34.842Z-04:00 | INFO | -->(c04e) GET https://api.cloudflareclient.com/v0a4762/reg/46753811-839b-4cfa-9d69-c43947bfa2f0
+2025-04-04T01:01:34.961Z-04:00 | INFO | <--(c04e) 200 OK https://api.cloudflareclient.com/v0a4762/reg/46753811-839b-4cfa-9d69-c43947bfa2f0 (116ms, unknown-length body)
+2025-04-04T01:01:35.365Z-04:00 | INFO | -->(c852) GET https://api.cloudflareclient.com/v0a4762/reg/46753811-839b-4cfa-9d69-c43947bfa2f0/account
+2025-04-04T01:01:35.413Z-04:00 | INFO | Device name already registered or account not created
+2025-04-04T01:01:35.641Z-04:00 | INFO | <--(c852) 200 OK https://api.cloudflareclient.com/v0a4762/reg/46753811-839b-4cfa-9d69-c43947bfa2f0/account (274ms, unknown-length body)
+2025-04-04T01:01:35.974Z-04:00 | INFO | MainActivity: invoke and check registration diff
+2025-04-04T01:01:36.014Z-04:00 | INFO | RefreshRegistrationWorker: Inside checkDiffAndProcessRegistrationData, initial registration data - RegistrationResponseWithoutToken(id=46753811-839b-4cfa-9d69-c43947bfa2f0, config=WarpTunnelConfig(peers=[WarpPeer(publicKey=-----BEGIN PUBLIC KEY-----
+MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG
+7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==
+-----END PUBLIC KEY-----
+, endpoint=PeerTunnelAddresses(v4=162.159.198.1:0, v6=[2606:4700:103::1]:0, ports=[443, 500, 1701, 4500, 4443, 8443, 8095]))], tunnelAddressWrapper=TunnelAddressWrapper(tunnelAddresses=TunnelAddresses(v4=172.16.0.2, v6=2606:4700:110:8c3c:9054:ad13:a0bc:8f2e)), edgeProxyWrapper=EdgeProxyWrapper(edgeProxyAddress=172.16.0.1:2480)), account=AccountData(id=13a76a23-9595-4493-9c26-620f6f550aa1, accountType=FREE, warpBytesLimit=0, warpBytesRemaining=0, nextBillingDate=null, referralCount=0, license=8TE1M73w-iE2689Df-6iR9r08U, managed=null, role=CHILD), policy=AppConfiguration(organization=null, enable=null, serviceMode=null, serviceModeV2=null, gatewayUniqueId=null, supportUrl=null, showOnboarding=null, exclude=null, include=null, fallbackDomains=null, switchLocked=null, autoConnect=null, managedMode=null, allowModeSwitch=null, authClientId=null, authClientSecret=null, allowedToLeave=null, overrideDohEndpoint=null, overrideWarpEndpoint=null, overrideApiEndpoint=null, uniqueClientId=null, tunnelProtocol=MASQUE, policyId=null), overrideCodes=null, alternateNetworks=null, dexTests=null, keyType=secp256r1, tunnelType=MASQUE)
+2025-04-04T01:01:36.109Z-04:00 | INFO | AppConfigurationManager: tunnel protocol received from the API is different compared to the one on a user's device
+2025-04-04T01:01:36.111Z-04:00 | INFO | RefreshRegistrationWorker: registration data after tunnel protocol verification - null
+2025-04-04T01:01:36.174Z-04:00 | INFO | RefreshRegistrationWorker: Empty MDM config, just process policy received from API
+2025-04-04T01:01:36.175Z-04:00 | INFO | RefreshRegistrationWorker: Combine mdm policy (if available) with policy received from the API response
+2025-04-04T01:01:36.235Z-04:00 | INFO | RefreshRegistrationWorker: previous and current registrationData diff=true
+2025-04-04T01:01:36.239Z-04:00 | INFO | AppConfigurationManager: store warp details
+2025-04-04T01:01:36.336Z-04:00 | INFO | RefreshRegistrationWorker: checkDiffAndProcessRegistrationData - app config: AppConfiguration(organization=null, enable=null, serviceMode=WARP, serviceModeV2=null, gatewayUniqueId=null, supportUrl=null, showOnboarding=null, exclude=null, include=null, fallbackDomains=null, switchLocked=null, autoConnect=null, managedMode=null, allowModeSwitch=null, authClientId=null, authClientSecret=null, allowedToLeave=null, overrideDohEndpoint=null, overrideWarpEndpoint=null, overrideApiEndpoint=null, uniqueClientId=null, tunnelProtocol=MASQUE, policyId=null)
+2025-04-04T01:01:36.344Z-04:00 | INFO | RefreshRegistrationWorker: service is not running, just execute DP rules
+2025-04-04T01:01:37.950Z-04:00 | INFO | RxBillingClient: response code = -1
+2025-04-04T01:01:37.990Z-04:00 | INFO | retryDisconnectedBillingService(): error - com.cloudflare.app.domain.warp.subscription.RxBillingClient$ProductDetailsException: Could not retrieve Product details (billing response: -1)
+2025-04-04T01:01:40.545Z-04:00 | INFO | MainControlFragment: User turned ON the toggle switch in main screen
+2025-04-04T01:01:40.606Z-04:00 | INFO | MainControlFragment: invoke setMainSwitchState with isChecked=true
+2025-04-04T01:01:40.607Z-04:00 | INFO | MainControlFragment: set mainSwitch state, shouldStartService: true
+2025-04-04T01:01:40.609Z-04:00 | INFO | MainControlViewModel: init start service isServiceActive: true 
+2025-04-04T01:01:40.639Z-04:00 | INFO | App version: 6.38.2 (4762)
+2025-04-04T01:01:40.640Z-04:00 | INFO | System language: en
+2025-04-04T01:01:41.008Z-04:00 | INFO | RxBillingClient: response code = -1
+2025-04-04T01:01:41.011Z-04:00 | INFO | retryDisconnectedBillingService(): error - com.cloudflare.app.domain.warp.subscription.RxBillingClient$ProductDetailsException: Could not retrieve Product details (billing response: -1)
+2025-04-04T01:01:41.015Z-04:00 | INFO | VpnServiceMediator: starting foreground service
+2025-04-04T01:01:41.152Z-04:00 | DEBUG | [WifiConnectionDetector] networkInfo: 502
+2025-04-04T01:01:41.156Z-04:00 | DEBUG | [WifiConnectionDetector] hasWifiTransport: true hasCellularTransport: false
+2025-04-04T01:01:41.181Z-04:00 | DEBUG | [WifiConnectionDetector] wifi ssid: Platinum55
+2025-04-04T01:01:41.183Z-04:00 | DEBUG | [WifiConnectionDetector] wifi ssid: Platinum55
+2025-04-04T01:01:41.231Z-04:00 | INFO | NetworkChangeReceiver: Register network events
+2025-04-04T01:01:41.243Z-04:00 | DEBUG | NetworkChangeReceiver - onAvailable on network: 2156090018526.
+2025-04-04T01:01:41.249Z-04:00 | INFO | AlternateNetwork: Disposing network observable events
+2025-04-04T01:01:41.250Z-04:00 | INFO | AlternateNetwork: Observe network change events
+2025-04-04T01:01:41.405Z-04:00 | DEBUG | BoringTunJNI WireGuard library loaded.
+2025-04-04T01:01:41.423Z-04:00 | INFO | Starting WARP tunnel
+2025-04-04T01:01:41.433Z-04:00 | INFO | WarpTunnel: Inside initializeTunnelParams, tid: 3470
+2025-04-04T01:01:41.441Z-04:00 | DEBUG | CloudflareVpnService: difference between current and previous timestamp for retrieving the registration data - 5417
+2025-04-04T01:01:41.495Z-04:00 | INFO | WarpTunnel: Warp config: WarpTunnelConfig(peers=[WarpPeer(publicKey=-----BEGIN PUBLIC KEY-----
+MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG
+7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==
+-----END PUBLIC KEY-----
+, endpoint=PeerTunnelAddresses(v4=162.159.198.1:0, v6=[2606:4700:103::1]:0, ports=[443, 500, 1701, 4500, 4443, 8443, 8095]))], tunnelAddressWrapper=TunnelAddressWrapper(tunnelAddresses=TunnelAddresses(v4=172.16.0.2, v6=2606:4700:110:8c3c:9054:ad13:a0bc:8f2e)), edgeProxyWrapper=EdgeProxyWrapper(edgeProxyAddress=172.16.0.1:2480))
+2025-04-04T01:01:41.497Z-04:00 | INFO | WarpTunnel: reg id: 46753811-839b-4cfa-9d69-c43947bfa2f0, public key: MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAElkS2takM/IDE7RqcUaIwg5A92dCKIIdooQmImMCQw6aY+xkY7ugM6AzVID41mG9iiCqhDaK0cK0yCVsT9clkMQ==
+2025-04-04T01:01:41.678Z-04:00 | INFO | WarpTunnel: initialized the tunnel params
+2025-04-04T01:01:42.256Z-04:00 | INFO | active network changed: WiFiNetwork(ssid=null)
+2025-04-04T01:01:42.266Z-04:00 | INFO | 
+Network type: wifi
+wifi ssid (extra info): null
+interface: lo
+    address: ::1
+    address: 127.0.0.1
+interface: wlan0
+    address: fe80::c2bd:c8ff:fe26:4c71%wlan0
+    address: 2601:46:c97e:2160:c2bd:c8ff:fe26:4c71
+    address: 2601:46:c97e:2160:60d6:86d9:9924:8d3b
+    address: 10.0.0.166
+2025-04-04T01:01:42.275Z-04:00 | DEBUG | FallbackResolverAddressProvider: Resolver address set for FALLBACK UDP: [/2001:558:feed::2, /2001:558:feed::1, /75.75.75.75, /75.75.76.76]
+2025-04-04T01:01:42.281Z-04:00 | INFO | WarpTunnel: received network change: WiFiNetwork(ssid=null), dns servers: [/2001:558:feed::2, /2001:558:feed::1, /75.75.75.75, /75.75.76.76], tid: 3470
+2025-04-04T01:01:42.282Z-04:00 | DEBUG | [WifiConnectionDetector] networkInfo: 502
+2025-04-04T01:01:42.284Z-04:00 | DEBUG | [WifiConnectionDetector] hasWifiTransport: true hasCellularTransport: false
+2025-04-04T01:01:42.287Z-04:00 | DEBUG | [WifiConnectionDetector] wifi ssid: Platinum55
+2025-04-04T01:01:42.290Z-04:00 | INFO | WarpTunnel: tunnel is not started yet, invoke startTunnel().
+2025-04-04T01:01:42.290Z-04:00 | DEBUG | [WifiConnectionDetector] wifi ssid: Platinum55
+2025-04-04T01:01:42.291Z-04:00 | INFO | WarpTunnel: inside startTunnel(), tid: 3470
+2025-04-04T01:01:42.369Z-04:00 | INFO | WarpTunnel: routes added - exclude routes as split tunnel config
+2025-04-04T01:01:42.575Z-04:00 | INFO | WarpTunnel: Established VPN tunnel interface
+2025-04-04T01:01:43.194Z-04:00 | INFO | WarpTunnel: started native tunnel.
+2025-04-04T01:01:43.199Z-04:00 | INFO | WarpTunnel: Inside start checking trace inside tunnel
+2025-04-04T01:01:43.201Z-04:00 | INFO | DexManager: Schedule dex test
+2025-04-04T01:01:43.201Z-04:00 | INFO | WarpRegistrationScheduler: schedule registration data if isGooglePlayServiceAvailable=false
+2025-04-04T01:01:43.206Z-04:00 | INFO | WarpRegistrationScheduler: Initial delay to execute schedule registration data: 3593 seconds
+2025-04-04T01:01:43.208Z-04:00 | INFO | WarpRegistrationScheduler: condition to schedule: false
+2025-04-04T01:01:43.552Z-04:00 | INFO | isNetworkAvailable(): for SDK 23 or greater, network capabilities: [ Transports: VPN Capabilities: NOT_RESTRICTED&TRUSTED&VALIDATED&FOREGROUND]
+2025-04-04T01:01:43.559Z-04:00 | INFO | isNetworkAvailable(): for SDK 23 or greater, network capabilities: [ Transports: VPN Capabilities: NOT_RESTRICTED&TRUSTED&VALIDATED&FOREGROUND]
+2025-04-04T01:01:44.031Z-04:00 | INFO | RxBillingClient: response code = -1
+2025-04-04T01:01:44.035Z-04:00 | INFO | retryDisconnectedBillingService(): error - com.cloudflare.app.domain.warp.subscription.RxBillingClient$ProductDetailsException: Could not retrieve Product details (billing response: -1)
+2025-04-04T01:01:46.705Z-04:00 | INFO | WarpSettingsActivity: User launched WarpSettingsActivity
+2025-04-04T01:01:47.057Z-04:00 | INFO | RxBillingClient: response code = -1
+2025-04-04T01:01:47.286Z-04:00 | INFO | AlternateNetwork: Disposing network observable events
+2025-04-04T01:01:47.727Z-04:00 | INFO | ConnectivityVerifier: Trace url: https://connectivity.cloudflareclient.com/cdn-cgi/trace
+2025-04-04T01:01:48.255Z-04:00 | INFO | Trace call response (inside tunnel): ClientTrace(warpMetal=650f35, host=connectivity.cloudflareclient.com, ipAddress=2a09:bac1:76c0:1330::28a:23, timestamp=1743728508.239, scheme=https, uag=okhttp/4.9.3, colocationCenter=EWR, sliver=010-tier1, httpType=http/2, country=US, tls=TLSv1.2, sni=plaintext, warpState=on, gateway=off, kex=X25519)
+2025-04-04T01:01:48.287Z-04:00 | INFO | Connectivity check after tunnel is started - Connectivity check passed
+2025-04-04T01:01:52.321Z-04:00 | INFO | [CaptivePortalDetector] Network Change detected in CaptivePortalDetector
+2025-04-04T01:01:52.376Z-04:00 | INFO | [CaptivePortalDetector] Checking Captive Portal With HTTPS...
+2025-04-04T01:01:52.563Z-04:00 | INFO | FallbackBlocklist: domainName-cp.cloudflare.com suffix matches with fallback domain - cp.cloudflare.com
+2025-04-04T01:01:52.589Z-04:00 | INFO | Socket is NULL, creating the socket
+2025-04-04T01:01:52.686Z-04:00 | INFO | WarpSettingsActivity: Clicked on moreSettingsBtn
+2025-04-04T01:01:52.875Z-04:00 | INFO | FallbackBlocklist: domainName-cp.cloudflare.com suffix matches with fallback domain - cp.cloudflare.com
+2025-04-04T01:01:53.428Z-04:00 | INFO | [CaptivePortalDetector] Execute Request | url = https://cp.cloudflare.com, response code = 204
+2025-04-04T01:01:53.431Z-04:00 | INFO | [CaptivePortalDetector] Checking Captive Portal With HTTPS result = Response{protocol=h2, code=204, message=, url=https://cp.cloudflare.com/}
+2025-04-04T01:01:53.434Z-04:00 | INFO | [CaptivePortalDetector] Result: isCaptivePortal = false
+2025-04-04T01:01:56.507Z-04:00 | INFO | FallbackBlocklist: domainName-nonexistent.cloudflare.com suffix matches with fallback domain - nonexistent.cloudflare.com
+2025-04-04T01:01:56.579Z-04:00 | INFO | FallbackBlocklist: domainName-nonexistent.cloudflare.com suffix matches with fallback domain - nonexistent.cloudflare.com
+2025-04-04T01:02:24.447Z-04:00 | INFO | LocalDomainFallbackActivity: User inside onCreate
+2025-04-04T01:03:18.264Z-04:00 | INFO | DiagnosticsActivity: User inside onCreate
+2025-04-04T01:03:18.272Z-04:00 | INFO | DiagnosticsManager: Trace url: https://connectivity.cloudflareclient.com/cdn-cgi/trace
+2025-04-04T01:03:57.691Z-04:00 | INFO | DiagnosticsManager: Trace url: https://connectivity.cloudflareclient.com/cdn-cgi/trace
+2025-04-04T01:04:07.345Z-04:00 | INFO | DiagnosticsManager: Trace url: https://connectivity.cloudflareclient.com/cdn-cgi/trace
+2025-04-04T01:04:09.044Z-04:00 | INFO | LogsProcessor: Client Version: a-6.38.2-4762
+2025-04-04T01:04:09.048Z-04:00 | INFO | LogsProcessor: Android version: 8.0.0
+2025-04-04T01:04:11.990Z-04:00 | INFO | LogsProcessor: Client Version: a-6.38.2-4762
+2025-04-04T01:04:11.991Z-04:00 | INFO | LogsProcessor: Android version: 8.0.0
+2025-04-04T01:04:17.358Z-04:00 | INFO | LogsProcessor: Client Version: a-6.38.2-4762
+2025-04-04T01:04:17.419Z-04:00 | INFO | LogsProcessor: Android version: 8.0.0
+2025-04-04T01:04:19.014Z-04:00 | INFO | LogsProcessor: Client Version: a-6.38.2-4762
+2025-04-04T01:04:19.045Z-04:00 | INFO | LogsProcessor: Android version: 8.0.0

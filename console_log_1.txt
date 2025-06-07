@@ -1,0 +1,4 @@
+2025-04-03T22:41:34.757Z-04:00 | INFO | DatetimeChangedReceiver: Inside onReceive broadcast receiver
+2025-04-03T22:41:34.789Z-04:00 | INFO | DatetimeChangedReceiver: expected intent action matched
+2025-04-03T22:41:34.796Z-04:00 | INFO | -->(0b03) GET https://api.cloudflareclient.com/v0a4762/reg/46753811-839b-4cfa-9d69-c43947bfa2f0/account
+2025-04-03T22:41:36.144Z-04:00 | INFO | <--(0b03) 200 OK https://api.cloudflareclient.com/v0a4762/reg/46753811-839b-4cfa-9d69-c43947bfa2f0/account (1344ms, unknown-length body)

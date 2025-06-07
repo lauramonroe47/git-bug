@@ -1,0 +1,9 @@
+#!name=router.com_desktop
+#!desc=local_VPN_mitm
+After enabling the module, you may access the router configutation webpage by accessing http://router.com in your browser. The URL will always redirect to the gateway address in the current network.
+force-http-engine-hosts=%APPEND% router.com, www.router.com
+hostname = %INSERT% router.com, www.router.com
+^https?://(|www\.)router\.com http://{{{GATEWAY_ADDRESS}}} 302
+HomeKit Accessories Quirk
+Some HomeKit devices have issues with their protocol implementation, sending non-HTTP standard data after the standard HTTP requests, which causes Surge's HTTP engine to be unable to forward correctly. Enabling this will cause related requests to be handled using raw TCP processing.
+always-raw-tcp-keywords = %INSERT% "Content-Type: application/pairing+tlv8"
