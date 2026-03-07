@@ -1,0 +1,12 @@
+<!--
+In Android Studio, this file is loaded *instead* of IdeaPlugin.xml.
+If a plugin wants to perform Android-Studio-specific customizations, then it can add an
+optional dependency on the module 'com.intellij.modules.androidstudio' declared below.
+-->
+<idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="/META-INF/JavaIdePlugin.xml" xpointer="xpointer(/idea-plugin/*)"/>
+  <module value="com.intellij.modules.androidstudio"/>
+  <module value="com.intellij.modules.java-capable"/>
+  <module value="com.intellij.modules.python-core-capable"/>
+  <module value="com.intellij.modules.cidr.ide"/>
+</idea-plugin>
